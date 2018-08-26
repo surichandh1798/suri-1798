@@ -12,4 +12,4 @@ here we use  libraries of
 associated with the data set we uploaded here this code counts the no of people by counters and proide warning or notification to the corresponding departments through messaging service 
 crowd management based on people density - python- Live stream webcam by opencv2 -Messaging through Twilio.
 Here our data set is our webcam, user can be recommended to use their own.
-
+Email_id:surichandh1998@gmail.com
