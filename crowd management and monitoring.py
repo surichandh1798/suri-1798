@@ -104,13 +104,12 @@ while True:
     cv2.imshow("Security Feed", frame)
 
 
-# cleanup the camera and close any open windows
-camera.release()
-cv2.destroyAllWindows()
+#accessing twilio
+
 u=textIn
 q=textOut
 z=u-q
-if (z>=10):
+if (z>=3):   #if the people is more than 3 in this case message sent
  from twilio.rest import Client
  account_sid = "ACfd4586fa47c3f3dd27e39d023862be28"
  auth_token  = "f3e0b4d90e7dbef81758e5a42a2a290d"
@@ -125,4 +124,7 @@ if (z>=10):
 
 else:
     print ("PEOPLE COUNT IS UNDER SAFE CONDITION")
-   
+# cleanup the camera and close any open windows
+camera.release()
+cv2.destroyAllWindows()  
+
